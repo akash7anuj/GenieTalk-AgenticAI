@@ -303,7 +303,7 @@ with st.sidebar:
         help="Chat = normal assistant; Agentic Task = goal-based planning agent."
     )
 
-    st.markdown("### 🧠 Role / Persona")
+    # st.markdown("### 🧠 Role / Persona")
     role = st.selectbox(
         "Choose agent role",
         [
@@ -450,3 +450,4 @@ if user_input and api_key:
             {"user": user_input, "assistant": agent_text}
         )
         st.session_state.agent_runs.append(agent_run)
+
